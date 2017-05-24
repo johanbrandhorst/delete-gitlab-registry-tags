@@ -64,6 +64,9 @@
                         type: 'POST',
                         url: url,
                         data: {_method:'delete', authenticity_token:$('meta[name="csrf-token"]').attr("content")},
+                        error: function(data){
+                            console.log('failed to delete' + tag);
+                        },
                         success: function(data){
                             console.log(tag + ' deleted');
                         },
