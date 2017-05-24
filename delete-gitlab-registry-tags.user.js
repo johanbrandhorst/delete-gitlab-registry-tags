@@ -67,7 +67,7 @@
                         success: function(data){
                             console.log(tag + ' deleted');
                         },
-                        async:false
+                        async: true
                     });
                 }
             }
